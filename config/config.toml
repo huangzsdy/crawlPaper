@@ -1,0 +1,35 @@
+[crawler]
+mode = "thread"  # thread, coroutine, process
+max_connections = 10
+request_timeout = 30
+retry_attempts = 3
+delay_between_requests = 1.0
+user_agent = "AcademicCrawler/1.0"
+
+[storage]
+output_dir = "./data"
+output_format = "json"
+max_file_size_mb = 100
+
+[arxiv]
+base_url = "https://export.arxiv.org/api/query"
+categories = ["cond-mat", "hep-th", "hep-ph", "hep-ex", "hep-lat", "quant-ph", "physics", "cond-mat.mtrl-sci", "physics.chem-ph"]
+max_results = 1000
+update_interval_hours = 24
+
+[biorxiv]
+base_url = "https://api.biorxiv.org/details/"
+categories = ["q-bio"]
+max_results = 500
+
+[chemrxiv]
+base_url = "https://chemrxiv.org/engage/chemrxiv/public-api/v1/items"
+categories = ["physics.chem-ph"]
+max_results = 300
+
+[keywords]
+physics = ["cond-mat", "hep-", "quant-ph", "physics"]
+materials = ["cond-mat.mtrl-sci"]
+chemistry = ["physics.chem-ph"]
+biology = ["q-bio"]
+electrical_engineering = ["eess.SP", "eess.SY"]

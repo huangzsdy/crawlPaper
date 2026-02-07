@@ -34,7 +34,7 @@ brew install cmake curl
 
 ### 1. 获取代码
 ```bash
-git clone https://github.com/yourusername/scientific-crawler.git
+git clone https://github.com/huangzsdy/crawlPaper.git
 cd scientific-crawler
 ```
 

@@ -1,0 +1,17 @@
+# JetBrains CLion
+.idea/
+*.iml
+out/
+
+# C/C++ 编译输出
+cmake-build-debug/
+cmake-build-release/
+cmake-build-min_size_rel/
+cmake-build-rel_with_deb_info/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
